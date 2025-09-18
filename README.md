@@ -382,7 +382,17 @@ tipo "Linux"
     
     ```
 
-### `shells`, `subshells`, `parent shells` y `process lists`
+### `shells`, `subshells`, `parent shells`
+* **Para qué sirve:** blablabla
+* **Opciones:**
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
+* **Ejemplos:**
+    ```bash
+    # Ejemplo
+    
+    ```
+### `process lists`
 * **Para qué sirve:** blablabla
 * **Opciones:**
     "completen las opciones que vean necesarias"
