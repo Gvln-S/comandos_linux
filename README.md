@@ -252,7 +252,6 @@ Este documento es una guía de referencia rápida para los comandos de Linux que
     * `-A`: ver todos los procesos que esta corriendo el sistema y no solo los del ususario
 * **Ejemplos:**
     ```bash
-    # Ejemplo 
     user@:~$ ps
     PID TTY          TIME CMD
     1 ?        00:00:00 bash
@@ -263,7 +262,6 @@ Este documento es una guía de referencia rápida para los comandos de Linux que
 * **Para qué sirve:** termina con un proceso que se este ejecutando, necesita como parametro el PID del proceso
 * **Ejemplos:**
     ```bash
-    # Ejemplo
     user@:~$ ps -l
     F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
     0 R  1000     1     0  0  60   0 -     0 -      ?        00:00:00 bash
@@ -280,7 +278,6 @@ Este documento es una guía de referencia rápida para los comandos de Linux que
 * **Para qué sirve:** lista los discos virtual del sistema
 * **Ejemplos:**
     ```bash
-    # Ejemplo
     user@:~$ fdisk -l
     Device     Boot    Start      End  Sectors  Size Id Type
     /dev/sda1  *        2048 39942143 39940096   19G 83 Linux
@@ -297,7 +294,6 @@ tipo "Linux"
     que enviaste como parametro
 * **Ejemplos:**
     ```bash
-    # Ejemplo
     user@:~$ sudo mount -t ext4 /dev/sda1 /ejemplo/particion/
     user@:~$ mount -t ext4
     /dev/sda1 on /ejemplo/particion type ext4 (rw,relatime,errors=remount-ro)
@@ -309,7 +305,6 @@ tipo "Linux"
     
 * **Ejemplos:**
     ```bash
-    # Ejemplo
     user@:~$ sudo umount /ejemplo/particion
     user@:~$ mount -t ext4
     /dev/sda1 on / type ext4 (rw,relatime,errors=remount-ro)
@@ -322,7 +317,6 @@ tipo "Linux"
     * `-h`: permite leer la información de salida más fácil
 * **Ejemplos:**
     ```bash
-    # Ejemplo
     user@:~$ df -h
     Filesystem      Size  Used Avail Use% Mounted on
     udev            938M     0  938M   0% /dev
@@ -339,8 +333,15 @@ tipo "Linux"
     * `-h`: permite leer la información de salida más fácil
 * **Ejemplos:**
     ```bash
-    # Ejemplo
-    
+    user@:~$ du -h
+    16K     ./personal/terminals/.poshthemes
+    64K     ./personal/terminals/.git/hooks
+    8.0K    ./personal/terminals/.git/info
+    4.0K    ./personal/terminals/.git/refs/tags
+    8.0K    ./personal/terminals/.git/refs/heads
+    12K     ./personal/terminals/.git/refs/remotes/origin
+    16K     ./personal/terminals/.git/refs/remotes
+    32K     ./personal/terminals/.git/refs
     ```
 
 ### `sort`
@@ -350,8 +351,30 @@ tipo "Linux"
     * `-n`: organiza numeros de menor a mayor
 * **Ejemplos:**
     ```bash
-    # Ejemplo
-    
+    user@:~$ cat prueba.txt
+    4
+    3
+    6
+    78
+    83
+    3
+    4
+    user@:~$ sort prueba.txt
+    3
+    3
+    4
+    4
+    6
+    78
+    83
+    user@:~$ sort -n prueba.txt
+    3
+    3
+    4
+    4
+    6
+    78
+    83
     ```
 
 ### `grep`
@@ -362,8 +385,17 @@ tipo "Linux"
     * `-c`: cuenta el numero de coincidencias encontradas  
 * **Ejemplos:**
     ```bash
-    # Ejemplo
-    
+    user@:~$ cat prueba_dos.txt
+    esta era la historia de juan
+    esta era la historia de pedro
+    esta era la historia de antonio
+    esta era la historia de lucrecia
+    esta era la historia de carlota
+    esta era la historia de sara
+    user@:~$ grep -n carlota prueba_dos.txt
+    5:esta era la historia de carlota
+    user@:~$ grep -c carlota prueba_dos.txt
+    1
     ```
 
 ### `zip` y `gzip`
@@ -371,7 +403,12 @@ tipo "Linux"
 * **Ejemplos:**
     ```bash
     # Ejemplo
-    
+    user@:~$ cat prueba_tres.txt
+    hola, me van a comprimir
+    user@:~$ zip prueba_comprimida.zip prueba_tres.txt
+    adding: prueba_tres.txt (stored 0%)
+    user@:~$ ls
+    prueba_comprimida.zip  prueba_tres.txt
     ```
 
 ### `which`
@@ -379,15 +416,52 @@ tipo "Linux"
 * **Ejemplos:**
     ```bash
     # Ejemplo
-    
+    user@:~$ which bash
+    /usr/bin/bash
+    user@:~$ which nano
+    /usr/bin/nano
+    user@:~$ which cat
+    /usr/bin/cat
     ```
 
 ### `shells`, `subshells`, `parent shells`
 * **Para qué sirve:** Cada máquina tiene varios tipos de shells que puedes usar. Puedes abrir una shell dentro de otra y se consideraria una hija (subshell) y la que la creo un padre (parent shell)
 * **Ejemplos:**
     ```bash
-    # Ejemplo
-    
+    user@:~$ bash
+    user@:~$ bash
+    user@:~$ bash
+    user@:~$ bash
+    user@:~$ bash
+    user@:~$ cat /etc/shells
+    # /etc/shells: valid login shells
+    /bin/sh
+    /usr/bin/sh
+    /bin/bash
+    /usr/bin/bash
+    /bin/rbash
+    /usr/bin/rbash
+    /bin/dash
+    /usr/bin/dash
+    /usr/bin/tmux
+    user@:~$ ps --forest
+    PID TTY          TIME CMD
+    1054 pts/1    00:00:00 bash
+    1684 pts/1    00:00:00  \_ bash
+    1686 pts/1    00:00:00      \_ bash
+    1688 pts/1    00:00:00          \_ bash
+    1690 pts/1    00:00:00              \_ bash
+    1692 pts/1    00:00:00                  \_ bash
+    1701 pts/1    00:00:00                      \_ ps
+    user@:~$ ps -l
+    F S   UID     PID    PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+    0 S  1000    1054    1053  0  80   0 -  2444 do_wai pts/1    00:00:00 bash
+    0 S  1000    1684    1054  0  80   0 -  2060 do_wai pts/1    00:00:00 bash
+    0 S  1000    1686    1684  0  80   0 -  2060 do_wai pts/1    00:00:00 bash
+    0 S  1000    1688    1686  0  80   0 -  2060 do_wai pts/1    00:00:00 bash
+    0 S  1000    1690    1688  0  80   0 -  2060 do_wai pts/1    00:00:00 bash
+    0 S  1000    1692    1690  0  80   0 -  2459 do_wai pts/1    00:00:00 bash
+    0 R  1000    1702    1692 99  80   0 -  2771 -      pts/1    00:00:00 ps
     ```
 ### `process lists`
 * **Para qué sirve:** blablabla
@@ -400,7 +474,7 @@ tipo "Linux"
     
     ```
 
-### `jobs` y `coproc`
+### `coproc`
 * **Para qué sirve:** blablabla
 * **Opciones:**
     "completen las opciones que vean necesarias"
@@ -410,6 +484,18 @@ tipo "Linux"
     # Ejemplo
     
     ```
+
+### `jobs`
+* **Para qué sirve:** blablabla
+* **Opciones:**
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
+* **Ejemplos:**
+    ```bash
+    # Ejemplo
+    
+    ```
+
 ### `sleep`
 * **Para qué sirve:** blablabla
 * **Opciones:**
