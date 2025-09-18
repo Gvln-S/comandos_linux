@@ -375,10 +375,7 @@ tipo "Linux"
     ```
 
 ### `which`
-* **Para qué sirve:** blablabla
-* **Opciones:**
-    "completen las opciones que vean necesarias"
-    * `-opcion`:
+* **Para qué sirve:** busca el directorio de instalación de una utilidad
 * **Ejemplos:**
     ```bash
     # Ejemplo
