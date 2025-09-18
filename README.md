@@ -345,10 +345,10 @@ tipo "Linux"
     ```
 
 ### `sort`
-* **Para qué sirve:** blablabla
+* **Para qué sirve:** organiza los elementos de un archivo
 * **Opciones:**
-    "completen las opciones que vean necesarias"
-    * `-opcion`:
+    * `-M`: organiza los meses en orden
+    * `-n`: organiza numeros de menor a mayor
 * **Ejemplos:**
     ```bash
     user@:~$ cat prueba.txt
@@ -378,10 +378,11 @@ tipo "Linux"
     ```
 
 ### `grep`
-* **Para qué sirve:** blablabla
+* **Para qué sirve:** buscar coincidencias de caracteres en un archivo
 * **Opciones:**
-    "completen las opciones que vean necesarias"
-    * `-opcion`:
+    * `-t`: busqueda al reves, te devuelve las lineas que no son coincidencias en un archivo
+    * `-n`: devuelve las lineas en las que se encuentran las coincidencias 
+    * `-c`: cuenta el numero de coincidencias encontradas  
 * **Ejemplos:**
     ```bash
     user@:~$ cat prueba_dos.txt
@@ -398,10 +399,7 @@ tipo "Linux"
     ```
 
 ### `zip` y `gzip`
-* **Para qué sirve:** blablabla
-* **Opciones:**
-    "completen las opciones que vean necesarias"
-    * `-opcion`:
+* **Para qué sirve:** comprime y descomprime archivos
 * **Ejemplos:**
     ```bash
     # Ejemplo
@@ -414,6 +412,14 @@ tipo "Linux"
     ```
 
 ### `which`
+* **Para qué sirve:** busca el directorio de instalación de una utilidad
+* **Ejemplos:**
+    ```bash
+    # Ejemplo
+    
+    ```
+
+### `shells`, `subshells`, `parent shells`
 * **Para qué sirve:** blablabla
 * **Opciones:**
     "completen las opciones que vean necesarias"
@@ -427,8 +433,7 @@ tipo "Linux"
     user@:~$ which cat
     /usr/bin/cat
     ```
-
-### `shells`, `subshells`, `parent shells` y `process lists`
+### `process lists`
 * **Para qué sirve:** blablabla
 * **Opciones:**
     "completen las opciones que vean necesarias"
