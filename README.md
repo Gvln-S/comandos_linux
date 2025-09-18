@@ -346,8 +346,8 @@ tipo "Linux"
 ### `sort`
 * **Para qué sirve:** organiza los elementos de un archivo
 * **Opciones:**
-    "completen las opciones que vean necesarias"
-    * `-opcion`:
+    * `-M`: organiza los meses en orden
+    * `-n`: organiza numeros de menor a mayor
 * **Ejemplos:**
     ```bash
     # Ejemplo
