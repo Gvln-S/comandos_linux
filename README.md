@@ -355,10 +355,11 @@ tipo "Linux"
     ```
 
 ### `grep`
-* **Para qué sirve:** blablabla
+* **Para qué sirve:** buscar coincidencias de caracteres en un archivo
 * **Opciones:**
-    "completen las opciones que vean necesarias"
-    * `-opcion`:
+    * `-t`: busqueda al reves, te devuelve las lineas que no son coincidencias en un archivo
+    * `-n`: devuelve las lineas en las que se encuentran las coincidencias 
+    * `-c`: cuenta el numero de coincidencias encontradas  
 * **Ejemplos:**
     ```bash
     # Ejemplo
