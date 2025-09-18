@@ -4,304 +4,450 @@ Este documento es una guía de referencia rápida para los comandos de Linux que
 
 ---
 
-## 👤 Brayan y Daniel Analitica
+## Brayan Presiga y Daniel Sánchez
 
 ### `cd`
-* **Para qué sirve:** (Explicación breve de su función principal).
+* **Para qué sirve:** blablabla.
 * **Opciones:**
-    * `cd ..`: (Descripción de la opción).
-    * `cd ~` o `cd`: (Descripción de la opción).
-    * `cd -`: (Descripción de la opción).
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
 * **Ejemplos:**
     ```bash
-    # Ejemplo 1: descripción de lo que hace el comando.
-    cd /var/log
-
-    # Ejemplo 2: descripción de lo que hace el comando.
-    cd ..
+    # Ejemplo
+    
     ```
 
 ### `echo`
-* **Para qué sirve:**
+* **Para qué sirve:** blablabla
 * **Opciones:**
-    * `-n`:
-    * `-e`:
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
 * **Ejemplos:**
     ```bash
-    # Ejemplo 1
-    echo "Hola Mundo"
+    # Ejemplo
+    
     ```
 
 ### `pwd`
-* **Para qué sirve:**
+* **Para qué sirve:** blablabla
 * **Opciones:**
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
 * **Ejemplos:**
     ```bash
-    # Ejemplo 1
-    pwd
+    # Ejemplo
+    
     ```
 
 ### `ls`
-* **Para qué sirve:**
+* **Para qué sirve:** blablabla
 * **Opciones:**
-    * `-l`:
-    * `-a`:
-    * `-h`:
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
 * **Ejemplos:**
     ```bash
-    # Ejemplo 1
-    ls -lah
+    # Ejemplo
+    
     ```
 
-
 ### `touch`
-* **Para qué sirve:**
+* **Para qué sirve:** blablabla
 * **Opciones:**
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
 * **Ejemplos:**
     ```bash
-    # Ejemplo 1
-    touch mi_archivo.txt
+    # Ejemplo
+    
     ```
 
 ### `cp`
-* **Para qué sirve:**
+* **Para qué sirve:** blablabla
 * **Opciones:**
-    * `-r`:
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
 * **Ejemplos:**
     ```bash
-    # Ejemplo 1
-    cp archivo_origen.txt /ruta/destino/
+    # Ejemplo
+    
     ```
 
 ### `mv`
-* **Para qué sirve:**
+* **Para qué sirve:** blablabla
 * **Opciones:**
-    * `-i`:
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
 * **Ejemplos:**
     ```bash
-    # Ejemplo 1
-    mv nombre_antiguo.txt nombre_nuevo.txt
+    # Ejemplo
+    
     ```
 
 ### `rm`
-* **Para qué sirve:**
+* **Para qué sirve:** blablabla
 * **Opciones:**
-    * `-r`:
-    * `-f`:
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
 * **Ejemplos:**
     ```bash
-    # Ejemplo 1
-    rm archivo_a_borrar.txt
+    # Ejemplo
+    
     ```
 
 ### `mkdir`
-* **Para qué sirve:**
+* **Para qué sirve:** blablabla
 * **Opciones:**
-    * `-p`:
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
 * **Ejemplos:**
     ```bash
-    # Ejemplo 1
-    mkdir -p nueva_carpeta/sub_carpeta
+    # Ejemplo
+    
     ```
 
 ### `file`
-* **Para qué sirve:**
+* **Para qué sirve:** blablabla
 * **Opciones:**
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
 * **Ejemplos:**
     ```bash
-    # Ejemplo 1
-    file mi_documento.pdf
+    # Ejemplo
+    
     ```
 
 ### `cat`
-* **Para qué sirve:**
+* **Para qué sirve:** blablabla
 * **Opciones:**
-    * `-n`:
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
 * **Ejemplos:**
     ```bash
-    # Ejemplo 1
-    cat archivo.txt
+    # Ejemplo
+    
     ```
 
 ### `tail`
-* **Para qué sirve:**
+* **Para qué sirve:** blablabla
 * **Opciones:**
-    * `-n <numero>`:
-    * `-f`:
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
 * **Ejemplos:**
     ```bash
-    # Ejemplo 1
-    tail -f /var/log/syslog
+    # Ejemplo
+    
     ```
 
 ### `head`
-* **Para qué sirve:**
+* **Para qué sirve:** blablabla
 * **Opciones:**
-    * `-n <numero>`:
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
 * **Ejemplos:**
     ```bash
-    # Ejemplo 1
-    head -n 20 archivo.csv
+    # Ejemplo
+    
     ```
 
 ---
 
-## 👤 Darek, Amigo de Nicolas y Valentina
+## Darek, Amigo de Nicolas y Valentina
 
-### `printenv`, `variables`, `export` y `unset`
-* **Para qué sirven:**
+### `printenv`
+* **Para qué sirve:** blablabla
 * **Opciones:**
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
 * **Ejemplos:**
     ```bash
-    # Ver el valor de la variable PATH
-    echo $PATH
-
-    # Crear una variable y exportarla
-    export MI_VARIABLE="mi valor"
-
-    # Eliminar la variable
-    unset MI_VARIABLE
+    # Ejemplo
+    
     ```
 
-### Gestión de Usuarios (`passwd`, `shadow`, `useradd`, `userdel`, `passwd`, `usermod`)
-* **Para qué sirven:**
+### Gestión de Usuarios (`/etc/passwd`, `/etc/shadow`)
+* **Para qué sirve:** blablabla
 * **Opciones:**
-    * `useradd -m`:
-    * `userdel -r`:
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
 * **Ejemplos:**
     ```bash
-    # Crear un nuevo usuario llamado 'testuser'
-    sudo useradd -m testuser
-
-    # Asignar una contraseña a 'testuser'
-    sudo passwd testuser
-
-    # Eliminar al usuario 'testuser' y su directorio home
-    sudo userdel -r testuser
+    # Ejemplo
+    
     ```
 
-### Gestión de Grupos (`group`, `groupadd`, `groupdel`)
-* **Para qué sirven:**
+### `useradd`
+* **Para qué sirve:** blablabla
 * **Opciones:**
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
 * **Ejemplos:**
     ```bash
-    # Crear un nuevo grupo llamado 'developers'
-    sudo groupadd developers
-
-    # Eliminar el grupo 'developers'
-    sudo groupdel developers
+    # Ejemplo
+    
     ```
 
-### `permisos` y `chmod`
-* **Para qué sirven:**
-* **Opciones/Modos:**
-    * **Simbólico (u, g, o, a / +, -, = / r, w, x):**
-    * **Octal (ej. 755, 644):**
+### `userdel`
+* **Para qué sirve:** blablabla
+* **Opciones:**
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
 * **Ejemplos:**
     ```bash
-    # Hacer un script ejecutable para el propietario
-    chmod u+x mi_script.sh
-
-    # Dar permisos de lectura y escritura al grupo y solo lectura a otros
-    chmod 764 mi_archivo.txt
+    # Ejemplo
+    
     ```
 
+### `passwd`
+* **Para qué sirve:** blablabla
+* **Opciones:**
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
+* **Ejemplos:**
+    ```bash
+    # Ejemplo
+    
+    ```
+
+### `usermod`
+* **Para qué sirve:** blablabla
+* **Opciones:**
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
+* **Ejemplos:**
+    ```bash
+    # Ejemplo
+    
+    ```
+
+### Gestión de Grupos (`/etc/group`, `groupadd`, `groupdel`)
+* **Para qué sirve:** blablabla
+* **Opciones:**
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
+* **Ejemplos:**
+    ```bash
+    # Ejemplo
+    
+    ```
+
+### `chmod` (y `permisos`)
+* **Para qué sirve:** blablabla
+* **Opciones:**
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
+* **Ejemplos:**
+    ```bash
+    # Ejemplo
+    
+    ```
 
 ---
 
-## 👤 Lu, Nicolas y Santiago
+## Lu, Nicolas y Santiago
 
-### `ps` y `kill`
-* **Para qué sirven:**
+### `ps`
+* **Para qué sirve:** lista procesos del sistema
 * **Opciones:**
-    * `ps aux`:
-    * `kill -9 <PID>`:
+    * `-l`: ver más información de los procesos 
+    * `-A`: ver todos los procesos que esta corriendo el sistema y no solo los del ususario
 * **Ejemplos:**
     ```bash
-    # Listar todos los procesos en ejecución
-    ps aux
-
-    # Encontrar el PID de un proceso (ej. firefox)
-    ps aux | grep firefox
-
-    # Terminar el proceso con PID 1234
-    kill 1234
+    # Ejemplo 
+    user@:~$ ps
+    PID TTY          TIME CMD
+    1 ?        00:00:00 bash
+    4 ?        00:00:00 ps
     ```
 
-### `mount`, `df`, `umount` y `du`
-* **Para qué sirven:**
-* **Opciones:**
-    * `df -h`:
-    * `du -sh`:
+### `kill`
+* **Para qué sirve:** termina con un proceso que se este ejecutando, necesita como parametro el PID del proceso
 * **Ejemplos:**
     ```bash
-    # Ver el espacio libre en los discos
-    df -h
-
-    # Ver el tamaño de la carpeta actual
-    du -sh .
-
-    # Montar un dispositivo (ejemplo)
-    sudo mount /dev/sdb1 /mnt/usb
+    # Ejemplo
+    user@:~$ ps -l
+    F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+    0 R  1000     1     0  0  60   0 -     0 -      ?        00:00:00 bash
+    0 R  1000    15     0  0  60   0 -     0 -      ?        00:00:00 bash
+    0 R  1000    17     0  0  60   0 -     0 -      ?        00:00:00 ps
+    user@:~$ kill 15
+    user@:~$ ps -l
+    F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+    0 R  1000     1     0  0  60   0 -     0 -      ?        00:00:00 bash
+    0 R  1000    18     0  0  60   0 -     0 -      ?        00:00:00 ps
     ```
 
-### `sort` y `grep`
-* **Para qué sirven:**
-* **Opciones:**
-    * `grep -i`:
-    * `grep -r`:
-    * `sort -n`:
+### `fdisk -l`
+* **Para qué sirve:** lista los discos virtual del sistema
 * **Ejemplos:**
     ```bash
-    # Buscar una palabra en un archivo
-    grep "error" log.txt
+    # Ejemplo
+    user@:~$ fdisk -l
+    Device     Boot    Start      End  Sectors  Size Id Type
+    /dev/sda1  *        2048 39942143 39940096   19G 83 Linux
+    /dev/sda2       39944190 41940991  1996802  975M  5 Extended
+    /dev/sda5       39944192 41940991  1996800  975M 82 Linux swap / Solaris   
+    ```
 
-    # Ordenar una lista de números
-    sort -n numeros.txt
+### `mount` y `umount`
+* **Para qué sirve:** (por si solo) lista dispositivos de almacenamiento actualmente montados en el sistema. Tiene que trabajar con un "device" de
+tipo "Linux"
+* **Opciones:**
+    * `-t (sistema_de_archivos)`: lista unicamente los dispositivos de almacenamiento que usan el sistema de archivos que enviaste como parametro
+    * `-t (sistema_de_archivos) (dispositivo) (directorio)`: monta una partición en un dispositivo del sistema y lo guarda en el directorio
+    que enviaste como parametro
+* **Ejemplos:**
+    ```bash
+    # Ejemplo
+    user@:~$ sudo mount -t ext4 /dev/sda1 /ejemplo/particion/
+    user@:~$ mount -t ext4
+    /dev/sda1 on /ejemplo/particion type ext4 (rw,relatime,errors=remount-ro)
+    ```
+* **Para qué sirve:** desmonta una partición 
+* **Opciones:**
+    * `(dispositivo) | (directorio)`: desmonta una partición de un dispositivo del sistema, usando el nombre del dispositivo o el directorio de creación
+    de la montura
+    
+* **Ejemplos:**
+    ```bash
+    # Ejemplo
+    user@:~$ sudo umount /ejemplo/particion
+    user@:~$ mount -t ext4
+    /dev/sda1 on / type ext4 (rw,relatime,errors=remount-ro)
+    ```
+
+
+### `df`
+* **Para qué sirve:** muestra cada sistema de archivo montado que contega datos
+* **Opciones:**
+    * `-h`: permite leer la información de salida más fácil
+* **Ejemplos:**
+    ```bash
+    # Ejemplo
+    user@:~$ df -h
+    Filesystem      Size  Used Avail Use% Mounted on
+    udev            938M     0  938M   0% /dev
+    tmpfs           192M  564K  192M   1% /run
+    /dev/sda1        19G  4.4G   14G  25% /
+    tmpfs           960M     0  960M   0% /dev/shm
+    tmpfs           5.0M     0  5.0M   0% /run/lock
+    tmpfs           192M     0  192M   0% /run/user/1000
+    ```
+
+### `du`
+* **Para qué sirve:** lista el uso del disco en un directorio específico
+* **Opciones:**
+    * `-h`: permite leer la información de salida más fácil
+* **Ejemplos:**
+    ```bash
+    # Ejemplo
+    
+    ```
+
+### `sort`
+* **Para qué sirve:** blablabla
+* **Opciones:**
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
+* **Ejemplos:**
+    ```bash
+    # Ejemplo
+    
+    ```
+
+### `grep`
+* **Para qué sirve:** blablabla
+* **Opciones:**
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
+* **Ejemplos:**
+    ```bash
+    # Ejemplo
+    
     ```
 
 ### `zip` y `gzip`
-* **Para qué sirven:**
+* **Para qué sirve:** blablabla
 * **Opciones:**
-    * `zip -r`:
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
 * **Ejemplos:**
     ```bash
-    # Comprimir un archivo
-    gzip mi_archivo.log
-
-    # Comprimir una carpeta
-    zip -r mi_carpeta.zip /ruta/de/la/carpeta
+    # Ejemplo
+    
     ```
 
-### Conceptos de Shell (`shells`, `subshells`, `parent shells`, `process lists`)
-* **Para qué sirven:**
+### `which`
+* **Para qué sirve:** blablabla
+* **Opciones:**
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
 * **Ejemplos:**
     ```bash
-    # Ejecutar comandos en una subshell
-    (pwd; ls)
+    # Ejemplo
+    
     ```
 
-### `sleep`, `jobs` y `coproc`
-* **Para qué sirven:**
+### `shells`, `subshells`, `parent shells` y `process lists`
+* **Para qué sirve:** blablabla
+* **Opciones:**
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
 * **Ejemplos:**
     ```bash
-    # Ejecutar un comando en segundo plano
-    sleep 60 &
-
-    # Ver los trabajos en segundo plano
-    jobs
+    # Ejemplo
+    
     ```
 
-### `which`, `type`, `history` y `alias`
-* **Para qué sirven:**
+### `jobs` y `coproc`
+* **Para qué sirve:** blablabla
+* **Opciones:**
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
 * **Ejemplos:**
     ```bash
-    # Encontrar la ubicación de un programa
-    which python
+    # Ejemplo
+    
+    ```
+### `sleep`
+* **Para qué sirve:** blablabla
+* **Opciones:**
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
+* **Ejemplos:**
+    ```bash
+    # Ejemplo
+    
+    ```
 
-    # Ver los últimos comandos usados
-    history
+### `type`
+* **Para qué sirve:** blablabla
+* **Opciones:**
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
+* **Ejemplos:**
+    ```bash
+    # Ejemplo
+    
+    ```
 
-    # Crear un alias
-    alias ll='ls -lah'
+### `history`
+* **Para qué sirve:** blablabla
+* **Opciones:**
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
+* **Ejemplos:**
+    ```bash
+    # Ejemplo
+    
+    ```
+
+### `alias`
+* **Para qué sirve:** blablabla
+* **Opciones:**
+    "completen las opciones que vean necesarias"
+    * `-opcion`:
+* **Ejemplos:**
+    ```bash
+    # Ejemplo
+    
     ```
