@@ -151,7 +151,7 @@ Este documento es una guía de referencia rápida para los comandos de Linux que
 
 ---
 
-## Darek, Amigo de Nicolas y Valentina
+## Darek Aljuri, Mauricio Suarez y Valentina Ruiz
 
 ### `printenv`
 * **Para qué sirve:** blablabla
@@ -243,7 +243,7 @@ Este documento es una guía de referencia rápida para los comandos de Linux que
 
 ---
 
-## Lu, Nicolas y Santiago
+## Luisa Carpintero, Nicolas Clavijo y Santiago Gavilán
 
 ### `ps`
 * **Para qué sirve:** lista procesos del sistema
@@ -456,6 +456,7 @@ tipo "Linux"
     1690 pts/1    00:00:00              \_ bash
     1692 pts/1    00:00:00                  \_ bash
     1701 pts/1    00:00:00                      \_ ps
+    # Noten que para el siguiente comando el PPID (Parent Process Id) es el PID (Process Id) de la shell padre
     user@:~$ ps -l
     F S   UID     PID    PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
     0 S  1000    1054    1053  0  80   0 -  2444 do_wai pts/1    00:00:00 bash
