@@ -416,7 +416,12 @@ tipo "Linux"
 * **Ejemplos:**
     ```bash
     # Ejemplo
-    
+    user@:~$ which bash
+    /usr/bin/bash
+    user@:~$ which nano
+    /usr/bin/nano
+    user@:~$ which cat
+    /usr/bin/cat
     ```
 
 ### `shells`, `subshells`, `parent shells`
@@ -426,12 +431,40 @@ tipo "Linux"
     * `-opcion`:
 * **Ejemplos:**
     ```bash
-    user@:~$ which bash
+    user@:~$ bash
+    user@:~$ bash
+    user@:~$ bash
+    user@:~$ bash
+    user@:~$ bash
+    user@:~$ cat /etc/shells
+    # /etc/shells: valid login shells
+    /bin/sh
+    /usr/bin/sh
+    /bin/bash
     /usr/bin/bash
-    user@:~$ which nano
-    /usr/bin/nano
-    user@:~$ which cat
-    /usr/bin/cat
+    /bin/rbash
+    /usr/bin/rbash
+    /bin/dash
+    /usr/bin/dash
+    /usr/bin/tmux
+    user@:~$ ps --forest
+    PID TTY          TIME CMD
+    1054 pts/1    00:00:00 bash
+    1684 pts/1    00:00:00  \_ bash
+    1686 pts/1    00:00:00      \_ bash
+    1688 pts/1    00:00:00          \_ bash
+    1690 pts/1    00:00:00              \_ bash
+    1692 pts/1    00:00:00                  \_ bash
+    1701 pts/1    00:00:00                      \_ ps
+    user@:~$ ps -l
+    F S   UID     PID    PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+    0 S  1000    1054    1053  0  80   0 -  2444 do_wai pts/1    00:00:00 bash
+    0 S  1000    1684    1054  0  80   0 -  2060 do_wai pts/1    00:00:00 bash
+    0 S  1000    1686    1684  0  80   0 -  2060 do_wai pts/1    00:00:00 bash
+    0 S  1000    1688    1686  0  80   0 -  2060 do_wai pts/1    00:00:00 bash
+    0 S  1000    1690    1688  0  80   0 -  2060 do_wai pts/1    00:00:00 bash
+    0 S  1000    1692    1690  0  80   0 -  2459 do_wai pts/1    00:00:00 bash
+    0 R  1000    1702    1692 99  80   0 -  2771 -      pts/1    00:00:00 ps
     ```
 ### `process lists`
 * **Para qué sirve:** blablabla
