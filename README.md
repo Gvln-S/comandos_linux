@@ -367,10 +367,7 @@ tipo "Linux"
     ```
 
 ### `zip` y `gzip`
-* **Para qué sirve:** blablabla
-* **Opciones:**
-    "completen las opciones que vean necesarias"
-    * `-opcion`:
+* **Para qué sirve:** comprime y descomprime archivos
 * **Ejemplos:**
     ```bash
     # Ejemplo
