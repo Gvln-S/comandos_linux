@@ -344,7 +344,7 @@ tipo "Linux"
     ```
 
 ### `sort`
-* **Para qué sirve:** blablabla
+* **Para qué sirve:** organiza los elementos de un archivo
 * **Opciones:**
     "completen las opciones que vean necesarias"
     * `-opcion`:
