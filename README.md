@@ -425,10 +425,7 @@ tipo "Linux"
     ```
 
 ### `shells`, `subshells`, `parent shells`
-* **Para qué sirve:** blablabla
-* **Opciones:**
-    "completen las opciones que vean necesarias"
-    * `-opcion`:
+* **Para qué sirve:** Cada máquina tiene varios tipos de shells que puedes usar. Puedes abrir una shell dentro de otra y se consideraria una hija (subshell) y la que la creo un padre (parent shell)
 * **Ejemplos:**
     ```bash
     user@:~$ bash
